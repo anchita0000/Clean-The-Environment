@@ -15,11 +15,11 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world
 
-	d1=new Dustbin(550,350,15,60);
-	d2=new Dustbin(555,410,50,15);
-	d3=new Dustbin(600,350,15,60);
-	paper=new Paper(100,410,50);
-	ground=new Ground(0,430,50,200);
+	d1=new Dustbin(490,340,15,80);
+	d2=new Dustbin(490,410,100,15);
+	d3=new Dustbin(580,340,15,80);
+	paper=new Paper(100,410,40);
+	ground=new Ground(350,430,700,20);
   
 }
 
@@ -34,6 +34,11 @@ function draw() {
  ground.display();
 
 
+}
+function keyPressed(){
+	if(keyCode===UP_ARROW){
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:55,y:-55});
+	}
 }
 
 

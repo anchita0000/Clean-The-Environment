@@ -20,7 +20,7 @@ display(){
     translate(paperpos.x,paperpos.y);
     rectMode(CENTER);
     strokeWeight(3);
-    fill("white");
+    fill("blue");
     ellipse(0,0,this.r,this.r);
     pop()
 }

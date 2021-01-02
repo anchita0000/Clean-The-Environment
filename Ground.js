@@ -16,6 +16,6 @@ display(){
 
     rectMode(CENTER);
     fill("green");
-    rect(pos.x,pos.y,this.width)
+    rect(pos.x,pos.y,this.width,this.height)
 }
 }
